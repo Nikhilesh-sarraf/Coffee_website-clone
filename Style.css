@@ -389,9 +389,7 @@ button:hover{
 
 
 @media (max-width: 650px) {
-  body {
-    background-color: lightblue;
-  }
+
   #card{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -402,13 +400,48 @@ button:hover{
 
 
 
-@media (max-width: 300px) {
-  body {
-    background-color: lightblue;
-  }
+@media (max-width: 500px) {
+ 
   #card{
     display: grid;
     grid-template-columns: repeat(1,1fr);
    
 }
+}
+
+
+
+
+
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+
+
+
+@media (max-width: 480px) {
+  .left_content {
+    margin: 0 10px;
+  }
+
+  .menu_bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
 }
